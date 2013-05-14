@@ -9,7 +9,7 @@ Installation
 
 Android
 
-* Copy com.urucas.plugins.ToastPlugin into to your Android project src/
+* Copy **com.urucas.plugins.ToastPlugin** into to your Android project **src/**
 
 * Add the plugin markup to the **config.xml** file of the phonegap project 
 ``<plugin name="ToastPlugin" value="com.urucas.plugins.ToastPlugin"/> ``

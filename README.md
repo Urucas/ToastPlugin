@@ -30,8 +30,6 @@ cordova.exec(
 
 License
 =======
-The source Code is available under same licenses as javamail which is :
-
 * CDDL-1.0
 * GPL-2.0
 * BSD

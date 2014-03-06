@@ -6,7 +6,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova,toast,phonegap</keywords>
     <js-module src="www/toast.js" name="Toast">
-        <clobbers target="toast" />
+        <clobbers target="window.toast" />
     </js-module>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">

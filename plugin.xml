@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.urucas.plugins.ToastPlugin" version="1.0">
+    <name>Toast</name>
+    <description>Cordova Toast Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,toast,phonegap</keywords>
+    <js-module src="www/toast.js" name="Toast">
+        <clobbers target="toast" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ToastPlugin">
+                <param name="ios-package" value="ToastPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="IOS/ToastPlugin.h" />
+        <source-file src="IOS/ToastPlugin.m" />
+    </platform>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="ToastPlugin">
+                <param name="android-package" value="com.urucas.plugins.ToastPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="Android/src/com/urucas/plugins/ToastPlugin.java"
+            target-dir="src/com/urucas/plugins"/>
+    </platform>
+</plugin>

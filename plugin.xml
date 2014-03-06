@@ -14,8 +14,8 @@
                 <param name="ios-package" value="ToastPlugin"/>
             </feature>
         </config-file>
-        <header-file src="IOS/ToastPlugin.h" />
-        <source-file src="IOS/ToastPlugin.m" />
+        <header-file src="src/ios/ToastPlugin.h" />
+        <source-file src="src/ios/ToastPlugin.m" />
     </platform>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/widget">
@@ -23,7 +23,7 @@
                 <param name="android-package" value="com.urucas.plugins.ToastPlugin"/>
             </feature>
         </config-file>
-        <source-file src="Android/src/com/urucas/plugins/ToastPlugin.java"
-            target-dir="src/com/urucas/plugins"/>
+        <source-file src="src/android/com/urucas/plugins/ToastPlugin.java"
+            target-dir="src/android/com/urucas/plugins"/>
     </platform>
 </plugin>

@@ -6,7 +6,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova,toast,phonegap</keywords>
     <engines>
-        <engine name="cordova" version=">=3.0.0">
+        <engine name="cordova" version=">=3.0.0"/>
     </engines>
     <js-module src="www/toast.js" name="Toast">
         <clobbers target="window.toast" />

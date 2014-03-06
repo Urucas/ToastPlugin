@@ -1,35 +1,34 @@
 ToastPlugin
 ===========
 
-Phonegap Toast Plugin
+Phonegap Toast Plugin for Android & iOS for Cordova >= 3.0
 
 
 Installation
 ============
 
-Android
+Android, iOS
 
-* Copy **com.urucas.plugins.ToastPlugin** into to your Android project **src/**
-
-* Add the plugin markup to the **config.xml** file of the phonegap project 
-``<plugin name="ToastPlugin" value="com.urucas.plugins.ToastPlugin"/> ``
-
+* Via cordova console
+``cordova plugin add https://github.com/Urucas/ToastPlugin.git``
 
 Usage
 =====
+From your javascript just call toast.alert().
+The only required param is the text to toast (1st param)
 
-<code>
-cordova.exec(
-  null, 
-  null, 
-  "ToastPlugin", 
-  "alert",
-  [{"text":"Im a toast text", "duration": "long"}]
-);
-</code>
+```
+toast.alert(
+  "This is a toast text",
+  "long",
+  function(){//success},
+  function(){//error}
+)
+```
+
+We still need to do some testing on iOS and Cordova 3.0
 
 License
 =======
-* CDDL-1.0
-* GPL-2.0
-* BSD
+* MIT License
+

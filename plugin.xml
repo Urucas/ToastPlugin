@@ -8,7 +8,7 @@
     <engines>
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
-    <js-module src="www/toast.js" name="Toast">
+    <js-module src="www/toast.js" name="toast">
         <clobbers target="window.toast" />
     </js-module>
     <platform name="ios">
@@ -27,6 +27,6 @@
             </feature>
         </config-file>
         <source-file src="src/android/com/urucas/plugins/ToastPlugin.java"
-            target-dir="src/android/com/urucas/plugins"/>
+            target-dir="src/com/urucas/plugins"/>
     </platform>
 </plugin>

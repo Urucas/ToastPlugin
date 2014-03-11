@@ -19,6 +19,7 @@
         </config-file>
         <header-file src="src/ios/ToastPlugin.h" />
         <source-file src="src/ios/ToastPlugin.m" />
+        <header-file src="src/ios/iToast.h" />
     </platform>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/widget">

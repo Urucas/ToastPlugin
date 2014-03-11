@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
-#import "iToast.h"
+#import "Itoast.h"
 
 
 @interface ToastPlugin : CDVPlugin {

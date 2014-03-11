@@ -1,16 +1,16 @@
-#import "iToast.h"
+#import "Itoast.h"
 #import <QuartzCore/QuartzCore.h>
 
 static iToastSettings *sharedSettings = nil;
 
-@interface iToast(private)
+@interface Itoast(private)
 
-- (iToast *) settings;
+- (Itoast *) settings;
 
 @end
 
 
-@implementation iToast
+@implementation Itoast
 
 
 - (id) initWithText:(NSString *) tex{
@@ -94,19 +94,19 @@ static iToastSettings *sharedSettings = nil;
 }
 
 
-+ (iToast *) makeText:(NSString *) _text{
-	iToast *toast = [[[iToast alloc] initWithText:_text] autorelease];
++ (Itoast *) makeText:(NSString *) _text{
+	Itoast *toast = [[[Itoast alloc] initWithText:_text] autorelease];
 	
 	return toast;
 }
 
 
-- (iToast *) setDuration:(NSInteger ) duration{
+- (Itoast *) setDuration:(NSInteger ) duration{
 	[self theSettings].duration = duration;
 	return self;
 }
 
-- (iToast *) setGravity:(iToastGravity) gravity 
+- (Itoast *) setGravity:(iToastGravity) gravity 
 			 offsetLeft:(NSInteger) left
 			  offsetTop:(NSInteger) top{
 	[self theSettings].gravity = gravity;
@@ -115,12 +115,12 @@ static iToastSettings *sharedSettings = nil;
 	return self;
 }
 
-- (iToast *) setGravity:(iToastGravity) gravity{
+- (Itoast *) setGravity:(iToastGravity) gravity{
 	[self theSettings].gravity = gravity;
 	return self;
 }
 
-- (iToast *) setPostion:(CGPoint) _position{
+- (Itoast *) setPostion:(CGPoint) _position{
 	[self theSettings].postition = CGPointMake(_position.x, _position.y);
 	
 	return self;

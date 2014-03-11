@@ -23,7 +23,7 @@ typedef enum iToastType {
 
 @class iToastSettings;
 
-@interface iToast : NSObject {
+@interface Itoast : NSObject {
 	iToastSettings *_settings;
 	NSInteger offsetLeft;
 	NSInteger offsetTop;
@@ -36,14 +36,14 @@ typedef enum iToastType {
 
 - (void) show;
 
-- (iToast *) setDuration:(NSInteger ) duration;
-- (iToast *) setGravity:(iToastGravity) gravity 
+- (Itoast *) setDuration:(NSInteger ) duration;
+- (Itoast *) setGravity:(iToastGravity) gravity 
 			 offsetLeft:(NSInteger) left
 			 offsetTop:(NSInteger) top;
-- (iToast *) setGravity:(iToastGravity) gravity;
-- (iToast *) setPostion:(CGPoint) position;
+- (Itoast *) setGravity:(iToastGravity) gravity;
+- (Itoast *) setPostion:(CGPoint) position;
 
-+ (iToast *) makeText:(NSString *) text;
++ (Itoast *) makeText:(NSString *) text;
 
 -(iToastSettings *) theSettings;
 

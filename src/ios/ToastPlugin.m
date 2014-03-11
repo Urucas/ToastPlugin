@@ -18,7 +18,7 @@
     CDVPluginResult* pluginResult = nil;
     NSString* myarg = [command.arguments objectAtIndex:0];
     
-    [[[[iToast makeText:NSLocalizedString(myarg, @"")]
+    [[[[Itoast makeText:NSLocalizedString(myarg, @"")]
        setGravity:iToastGravityBottom] setDuration:iToastDurationNormal] show];
     
     if (myarg != nil) {
